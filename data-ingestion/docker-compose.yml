@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  data-ingestion:
+    build: ./data-ingestion
+    container_name: data_ingestion_service
+    environment:
+      - API_KEY=your_api_key_here
+    networks:
+      - finance_network
+
+networks:
+  finance_network:
+    driver: bridge
