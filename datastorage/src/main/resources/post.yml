@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/stockexchange
+    username: stock_user
+    password: stock_password
+    driver-class-name: org.postgresql.Driver
+
+  data:
+    cassandra:
+      contact-points: localhost:9042
+      keyspace-name: stockexchange_keyspace
